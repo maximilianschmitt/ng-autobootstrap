@@ -1,0 +1,22 @@
+'use strict';
+
+module.exports = function(app) {
+	// Animations
+	app.animation('module-name', require('./some-path/animations/module-name'));
+	// Constants
+	app.constant('MODULE_NAME', require('./some-path/constants/module-name'));
+	// Controllers
+	app.controller('ModuleName', require('./some-path/controllers/module-name'));
+	// Directives
+	app.directive('moduleName', require('./some-path/directives/module-name'));
+	// Factorys
+	app.factory('ModuleName', require('./some-path/factories/module-name'));
+	// Filters
+	app.filter('moduleName', require('./some-path/filters/module-name'));
+	// Providers
+	app.provider('moduleName', require('./some-path/providers/module-name'));
+	// Services
+	app.service('moduleName', require('./some-path/services/module-name'));
+	// Values
+	app.value('moduleName', require('./some-path/values/module-name'));
+};

@@ -6,6 +6,12 @@ ng-autobootstrap automatically creates bootstrap files for including your angula
 
 Check out [gulp-ng-autobootstrap](https://github.com/maximilianschmitt/gulp-ng-autobootstrap)!
 
+## Installation
+
+```
+npm install ng-autobootstrap
+```
+
 ## API
 
 ### new NgAutoBootstrap([options])

@@ -1,6 +1,8 @@
 # ng-autobootstrap
 
-ng-autobootstrap automatically creates bootstrap files for including your angular modules like controllers and directives with browserify. Best used with [gulp](http://gulpjs.com) and [gulp-ng-autobootstrap](https://github.com/maximilianschmitt/gulp-ng-autobootstrap).
+> Automatically create bootstrap files for including your angular modules (like controllers and directives) with browserify.
+> 
+> Inspired by [ng-classify](https://github.com/CaryLandholt/ng-classify).
 
 ## Gulp plugin
 

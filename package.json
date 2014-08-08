@@ -21,9 +21,10 @@
     "url": "https://github.com/maximilianschmitt/ng-autobootstrap.git"
   },
   "scripts": {
-  	"test": "./node_modules/mocha/bin/mocha"
+    "test": "./node_modules/mocha/bin/mocha"
   },
   "dependencies": {
+    "change-case": "^2.1.1",
     "extend": "^1.3.0",
     "minimatch": "^1.0.0"
   },

@@ -7,7 +7,8 @@ var defaultOptions        = require('./lib/default-options');
 var bootstrapFileContents = require('./lib/bootstrap-file-contents');
 
 var NgAutoBootstrap = function(options) {
-	this.options = extend({}, defaultOptions, options);
+	options = options || {};
+	this.options = extend(true, {}, defaultOptions, options);
 	this.modulePathParser = new ModulePathParser(this.options);
 };
 

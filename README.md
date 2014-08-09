@@ -1,5 +1,7 @@
 # ng-autobootstrap
 
+![Travis Build](http://img.shields.io/travis/maximilianschmitt/ng-autobootstrap.svg?style=flat)
+
 > Automatically create bootstrap files for including your angular modules (like controllers and directives) with browserify.
 > 
 > Inspired by [ng-classify](https://github.com/CaryLandholt/ng-classify).

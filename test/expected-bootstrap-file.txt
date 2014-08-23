@@ -19,4 +19,6 @@ module.exports = function(app) {
 	app.service('moduleName', require('./some-path/services/module-name'));
 	// Values
 	app.value('moduleName', require('./some-path/values/module-name'));
+	// Configs
+	app.config(require('./some-path/for-something-config'));
 };

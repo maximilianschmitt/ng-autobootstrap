@@ -3,7 +3,7 @@
 ![Travis Build](http://img.shields.io/travis/maximilianschmitt/ng-autobootstrap.svg?style=flat)
 
 > Automatically create bootstrap files for including your angular modules (like controllers and directives) with browserify.
-> 
+>
 > Inspired by [ng-classify](https://github.com/CaryLandholt/ng-classify).
 
 ## Gulp plugin
@@ -113,6 +113,10 @@ var defaultOptions = {
 		value: {
 			path: '**/values/*.js',
 			casing: 'camelCase'
+		},
+		// config modules are pulled in like this: app.config(require('./path/to-config'))
+		config: {
+			path: '**/*-config.js'
 		}
 	}
 };

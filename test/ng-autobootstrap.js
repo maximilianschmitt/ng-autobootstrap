@@ -30,7 +30,7 @@ describe('NgAutoBootstrap', function() {
 				}
 			}
 		});
-		
+
 		expect(ngAutoBootstrap.options).to.deep.equal({
 			bootstrap: {
 				path: 'config/bootstrap.js'
@@ -72,6 +72,9 @@ describe('NgAutoBootstrap', function() {
 				value: {
 					path: '**/values/*.js',
 					casing: 'camelCase'
+				},
+				config: {
+					path: '**/*-config.js'
 				}
 			}
 		});

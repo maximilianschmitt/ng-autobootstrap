@@ -1,6 +1,6 @@
 {
   "name": "ng-autobootstrap",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Automatically create bootstrap files for requiring your angular modules with browserify.",
   "keywords": [
     "angular",

@@ -16,7 +16,8 @@ describe('bootstrapFileContents', function() {
 			filter: [{ path: './some-path/filters/module-name', name: 'moduleName' }],
 			provider: [{ path: './some-path/providers/module-name', name: 'moduleName' }],
 			service: [{ path: './some-path/services/module-name', name: 'moduleName' }],
-			value: [{ path: './some-path/values/module-name', name: 'moduleName' }]
+			value: [{ path: './some-path/values/module-name', name: 'moduleName' }],
+			config: [{ path: './some-path/for-something-config' }]
 		};
 		var expectedBootstrapFileContents = fs.readFileSync(__dirname + '/expected-bootstrap-file.txt').toString();
 

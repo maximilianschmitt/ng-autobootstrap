@@ -16,7 +16,7 @@ NgAutoBootstrap.prototype = {
 	bootstrap: function(filePaths) {
 		var moduleMap = this.modulePathParser.moduleMap(filePaths);
 
-		return bootstrapFileContents(moduleMap, this.modulePathParser);
+		return bootstrapFileContents(moduleMap, this.options);
 	}
 };
 

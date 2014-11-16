@@ -32,6 +32,7 @@ describe('NgAutoBootstrap', function() {
 		});
 
 		expect(ngAutoBootstrap.options).to.deep.equal({
+			strict: true,
 			bootstrap: {
 				path: 'config/bootstrap.js'
 			},
@@ -75,6 +76,9 @@ describe('NgAutoBootstrap', function() {
 				},
 				config: {
 					path: '**/*-config.js'
+				},
+				run: {
+					path: '**/*-run.js'
 				}
 			}
 		});

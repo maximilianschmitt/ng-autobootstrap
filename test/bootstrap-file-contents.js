@@ -21,6 +21,13 @@ describe('bootstrapFileContents', function() {
 		};
 		var expectedBootstrapFileContents = fs.readFileSync(__dirname + '/expected-bootstrap-file.txt').toString();
 
-		expect(bootstrapFileContents(moduleMap)).to.equal(expectedBootstrapFileContents);
+		expect(bootstrapFileContents(moduleMap, { strict: true })).to.equal(expectedBootstrapFileContents);
+	});
+
+	it('optionally generates the file not for strict mode', function() {
+		var moduleMap = {};
+		var expectedBootstrapFileContents = fs.readFileSync(__dirname + '/expected-bootstrap-file.txt').toString();
+
+		expect(bootstrapFileContents(moduleMap, { strict: false })).to.not.contain('\'use strict\'');
 	});
 });

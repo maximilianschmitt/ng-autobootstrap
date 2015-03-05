@@ -2,7 +2,7 @@
 
 module.exports = function(app) {
 	// Animations
-	app.animation('module-name', require('./some-path/animations/module-name'));
+	app.animation('.module-name', require('./some-path/animations/module-name'));
 	// Constants
 	app.constant('MODULE_NAME', require('./some-path/constants/module-name'));
 	// Controllers
